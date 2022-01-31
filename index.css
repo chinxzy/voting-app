@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0;
+    width: 100%
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+.fixed-bottom{
+  display: none !important;
+}
+.sticky-top{
+    margin-left: 0em !important;
+    margin-top: 2em;
+  
+  }
+  .navbar-brand>.img-fluid{
+    width: 11em;
+  }
+  .tog{
+    margin-right: 5em
+  }
+.tog>.nav-item>a{
+  color: #0069D9 !important;
+  font-weight: 600;
+  text-align: center;
+  width:5em;
+  margin-right: 4em
+}
+.cat{
+  position: relative;
+  left: 0.3em
+}
+.nom{
+  position: relative;
+  left: 0.5em
+}
+.res{
+  position: relative;
+  right: 0.1em
+}
+.tog>.active {
+  width:5em;
+  text-align: center;
+  color: red
+}
+.nav-item > a:hover {
+  color: #4a682c;
+}
+.sub{
+  display: none;
+}
+@media (max-width: 768px) and (max-width: 600px) {
+    .navbar>button>.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(74, 104, 44' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+      .navbar>button{
+        border: 1px solid #4a682c
+      }
+      .navbar{
+        margin-left: 0em !important;
+        margin-top: 2em;
+        
+      }
+      .navbar-brand>.img-fluid{
+        width: 8em;
+      }
+      .navbar-toggler{
+        display: none
+      }
+  nav{
+    padding: 0em !important;
+  }
+      .navbar{
+        margin-left: 0em !important;
+        margin-top: 0em;
+      }
+      .navbar-brand>.img-fluid{
+        width: 11em;
+      }
+      .navbar-nav{
+        margin-right: 0em !important;
+      }
+      .fixed-bottom{
+        background-color: #0069D9 !important;
+        display: block !important;
+        height: 4.7em
+      }
+      .nav-item>{
+        text-align: center !important;
+      }
+      .nav-item>a{
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      width:5em;
+      margin-right: 1em;
+      margin-left: 1em
+    }
+  .cat1{
+    position: relative;
+    left: 0.3em !important;
+  }
+  .res1{
+    position: relative;
+    right: 0.1em !important;
+  }
+  .nom1{
+    position: relative;
+    left: 0.5em !important;
+  }
+  h1{
+    font-size: 1.9em !important;
+    margin-bottom: 2em !important;
+  }
+}
